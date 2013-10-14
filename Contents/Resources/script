@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+sbpath = File.join(File.expand_path(File.dirname(__FILE__)), 'Sandbox')
+
+command = "HOME=\"#{sbpath}\" open Minecraft.app"
+
+puts command
+
+system(command)
